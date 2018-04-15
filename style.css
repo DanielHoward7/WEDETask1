@@ -1,0 +1,105 @@
+  Name: Daniel
+  Surname: Howard
+  Student Number: 16000911
+  Declaration:
+  This is my own code and any code from other sources will be referenced.
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background: #F8F8FF;
+}
+
+.button-toggle {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  background: rgb(66, 184, 221);
+}
+
+.header {
+  width: 60%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #28B1C2;
+  text-align: center;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 60%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+table{
+  width:100%;
+  table-layout: fixed;
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 900;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: solid 1px rgba(0,0,255,0.1);
+  border-top: solid 1px rgba(0,0,255,0.1);
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  border-bottom: solid 1px rgba(0,0,255,0.1);
+}
+
