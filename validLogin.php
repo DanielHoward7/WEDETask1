@@ -14,10 +14,7 @@ session_start();
   $password = "";
   $ErrorMsgs = array();
 
-$db = new mysqli("localhost","root","", "test");
-  if  (!$db)
-    $ErrorMsgs[] = "The database server is not available.";
-  else
+include('dbConn.php'); 
 
 //User login
 	if (isset($_POST['login'])) {

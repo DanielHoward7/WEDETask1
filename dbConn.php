@@ -3,7 +3,7 @@
 <?php
 
 	//Connect to db
-	$db = new mysqli("localhost","root","", "test");
+	$db = new mysqli("localhost","root","password", "test");
 	if  (!$db)
 		$ErrorMsgs[] = "The database server is not available.";
 	else

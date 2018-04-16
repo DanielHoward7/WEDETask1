@@ -1,6 +1,6 @@
 Dan@gmail.com,Dan,password
-John@gmail.com,John,password
-Mike@gmail.com,Mike,password
+John@gmail.com,John,pass
+Mike@gmail.com,Mike,pass123
 Jack@gmail.com,Jack,password
 Luke@gmail.com,Luke,password
 Mark@gmail.com,Mark,password

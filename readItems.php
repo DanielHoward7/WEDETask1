@@ -43,5 +43,4 @@ include("dbConn.php");
 	else{
 		echo "<p> ".$sqlIns. " done " .mysqli_get_host_info($db)."</p>";
 	}
-//works but no data in db, ask about importing non hashed passes
 ?>

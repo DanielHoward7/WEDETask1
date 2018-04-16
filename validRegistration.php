@@ -16,11 +16,7 @@
 	$ErrorMsgs = array();
 
 	//Connect to db
-	$db = new mysqli("localhost","root","", "test");
-	if  (!$db)
-		$ErrorMsgs[] = "The database server is not available.";
-	else
-		//echo "<p>Connection is valid</p>";
+	include('dbConn.php'); 
 
 	// If register button is clicked
 	if (isset($_POST['register'])) {

@@ -41,8 +41,8 @@
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
     	<h1 class="header">Welcome <strong><?php echo $_SESSION['username']; ?></strong></h1>
-    	<p> <a href="index.php?logout='1'">logout</a> </p>
-      <button class="button-toggle" onclick="toggle('items');">Show Items</button>
+    	<p> <a class="btn" href="index.php?logout='1'">logout</a> </p>
+      <button class="btn" onclick="toggle('items');">Show Items</button>
     <?php endif ?>
 
 </div>
@@ -54,24 +54,19 @@
         <th>Item Sku</th>
         <th>Description</th>
         <th>Price</th> 
-        <th>Show Image</th>   
+        <th>Image</th> 
+        <th> Add to cart</th>
       </tr>    
 <?php 
-     $files = glob("images/*.*");
-    foreach ($files as $image) {
-           echo '<img src="'.$image.'" <br>';
-         }
-
-
+    
     $sql = "SELECT itemID as SKU, description as DESCRIPTION, sellPrice as PRICE from items"; 
     $results = mysqli_query($db, $sql);
      
     if ($results->num_rows > 0) {
         //output of each row
       while ($user=mysqli_fetch_assoc($results)) {
-        $temp = "<tr><td>".$user['SKU']."</td><td>".$user['DESCRIPTION']."</td><td>".$user['PRICE']."</td><td><button>Add To Cart</button></td></tr>";
+        $temp = "<tr><td>".$user['SKU']."</td><td>".$user['DESCRIPTION']."</td><td>".$user['PRICE']."</td><td> <img class='image' src='images/{$user['SKU']}.jpg'></td><td><button>Add To Cart</button></td></tr>";
         echo $temp;
-        $arrLength++;
       }
        echo "</table>";
      }else {

@@ -15,9 +15,7 @@ body {
 
 .button-toggle {
   color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-  background: rgb(66, 184, 221);
+  
 }
 
 .header {
@@ -30,7 +28,7 @@ body {
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
 }
-form, .content {
+table, form, .content {
   width: 60%;
   margin: 0px auto;
   padding: 20px;
@@ -58,9 +56,12 @@ form, .content {
   padding: 10px;
   font-size: 15px;
   color: white;
-  background: #5F9EA0;
+  background: #28B1C2;
   border: none;
   border-radius: 5px;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0,0,0,5.2);
+  background: rgb(66, 184, 221);
 }
 .error {
   width: 92%; 
@@ -101,5 +102,9 @@ td{
   font-size: 14px;
   color: #000;
   border-bottom: solid 1px rgba(0,0,255,0.1);
+}
+
+.image {
+  width: 80%
 }
 

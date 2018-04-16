@@ -39,7 +39,8 @@ include("dbConn.php");
   foreach ($users as $ind=> $row)
   {
   	$rowData = explode(',', $row);
-	$sqlIns .= "('{$rowData[0]}','{$rowData[1]}','{$rowData[2]}'),";
+  	$pass = md5($rowData[2]);
+	$sqlIns .= "('{$rowData[0]}','{$rowData[1]}','$pass'),";
   }
 	$sqlIns = substr($sqlIns,0,strlen($sqlIns)-1);
 	echo $sqlIns;
@@ -50,5 +51,4 @@ include("dbConn.php");
 	else{
 		echo "<p> ".$sqlIns. " done " .mysqli_get_host_info($db)."</p>";
 	}
-//works but no data in db, ask about importing non hashed passes
 ?>
